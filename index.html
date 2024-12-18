@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GVK MARINES</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Styling for the Scroll to Top button */
+    #scrollToTopBtn {
+      position: fixed;
+      bottom: 25px;
+      right: 10px;
+      background-color: #000000;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none; /* Initially hidden */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    #scrollToTopBtn:hover {
+      background-color: #03ff3e;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container header-content">
+    <a href="/" class="logo">GVK MARINES</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="Workindeed">Workindeed</a>
+      <a href="#members">Members</a>
+      <a href="#contact" onclick="scrollToBottom()">Contact Us</a>
+      <button type="button" onclick="location.href='https://www.gvk-marine.com/'" class="cta-button">Overview</button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-content">
+    <h1>Sri GV Ramanujam</h1>
+    <p>Shock and Vibration Standards for Naval Systems</p>
+    <a href="#about GVK" class="cta-button">EXPLORE MORE</a>
+  </div>
+</section>
+
+<section class="progress-section">
+  <div class="container">
+    <h2>Our Members</h2>
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+    </div>
+
+    <p>5000 - 50000</p>
+    <div>
+      <h1>Our Locations</h1>
+      <p>Hyderabad</p>
+      <p>Pune</p>
+      <p>Bangalore</p>
+      <p>Mumbai</p>
+    </div>
+   
+  </div>
+</section>
+
+<section class="causes">
+  <div class="container">
+    <h2>PLANT & WORK</h2>
+    <div class="causes-grid">
+      <div class="cause-card">
+        <div class="cause-image" style="background-image: url('https://www.researchgate.net/publication/299850790/figure/fig3/AS:667623876472848@1536185344972/The-airborne-sound-insulation-frequency-response-for-separating-wall.jpg')"></div>
+        <div class="cause-content">
+          <h3>AIR BORNE NOISE</h3>
+          <p>Under MIL-STD-1474 E</p>
+          <a href="#donate" class="cta-button">Knowmore</a>
+        </div>
+      </div>
+      
+      <div class="cause-card">
+        <div class="cause-image" style="background-image: url('https://cdn.ecoustics.com/db0/wblob/17BA35E873D594/214/1F9A0/yQG5ukIq8GFOgsm2tIIpHGnrx1CuXsyPbbaprHsMvYA/128700.jpg')"></div>
+        <div class="cause-content">
+          <h3>STRUCTURED BORNE NOISE</h3>
+          <p>Under MIL-STD-740-2(SH) ISO 10816</p>
+          <a href="#donate" class="cta-button">Knowmore</a>
+        </div>
+      </div>
+      
+      <div class="cause-card">
+        <div class="cause-image" style="background-image: url('https://media.istockphoto.com/id/613236542/photo/interior-of-gtem-cell-and-probe-for-electromagnetic-compatibility-testing.jpg?s=612x612&w=0&k=20&c=EDJYUlMY0joMHwBXCffT3kkozQugX0QMUb8BWgXqE44=')"></div>
+        <div class="cause-content">
+          <h3>EMI + EMC TESTING</h3>
+          <p>Under MIL-STD 461 E/F & ISO / IEC 61000</p>
+          <a href="#donate" class="cta-button">Knowmore</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="container">
+    <h2>LEADS</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p>"It follows then as certain as that night succeeds the day, that without a decisive naval force we can do nothing definitive, and with it, everything honorable and glorious."</p>
+        <h4>- AVS Chari, Former Scientist G, DRDO</h4>
+      </div>
+      
+      <div class="testimonial-card">
+        <p>"Leadership is a two-way street, loyalty up and loyalty down. Respect for ones superiors; care for ones crew."</p>
+        <h4>- GV Ramanujam</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="container footer-grid">
+    <div class="footer-links">
+      
+      <h3>Quick Links</h3>
+      <a href="#about">About Us</a>
+      <a href="#causes">Our Causes</a>
+      <a href="#volunteer">Volunteer</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+    
+    <div class="footer-links">
+      <h3>Legal</h3>
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#terms">Terms & Conditions</a>
+    </div>
+    
+    <div class="newsletter">
+      <h3>Stay Updated</h3>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" onclick="scrollToTop()">▲</button>
+
+<script>
+  // Smooth Scroll to Bottom
+  function scrollToBottom() {
+    const contactSection = document.getElementById("contact"); // Select the contact section
+    contactSection.scrollIntoView({
+      behavior: "smooth",
+      block: "start" // Ensures the section aligns with the top of the viewport
+    });
+  }
+
+  // Smooth Scroll to Top
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
+  // Show/Hide Scroll to Top Button
+  window.addEventListener("scroll", () => {
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    if (window.scrollY > 300) { // Show the button when scrolled down
+      scrollToTopBtn.style.display = "block";
+    } else { // Hide the button when near the top
+      scrollToTopBtn.style.display = "none";
+    }
+  });
+</script>
+
+</body>
+</html>
